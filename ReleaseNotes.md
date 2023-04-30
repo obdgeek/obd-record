@@ -1,9 +1,25 @@
-## 0.50.3
-The first public release so take it slow.  Just interested in the onboarding process and a short trip/charge and confirm they show up in OBD Play (don't forget to add your MME as the active vehicle and use your new data source).
+# Release Notes
 
-While this build appears robust I need your feedback as only those with a Mach-E and an OBDLink MX+ can use this.  There is one known issue that you should be aware of (and perhaps more that I am unaware of):
-- Doesn't correctly detect a disconnection when you walk away so it stays in the Connected view but appears to be connected to the MX+.  I recommend you swipe up and remove and relauch OBD Record if it fails to detect the vehicle being plugged in or the ignition turned On.  You maight also have to go to the Bluetooth settings and manually disconnect the OBDLink MX+ (t should reconnect after a few seconds).
+## 0.50.20
+- removed .chargerPowerLimit from AC charge processing
+- added many data logging events
+- rewrite of connect/disconnect code
 
-### Change History
-- cleaned up EVSE naming
-- fixed onboarding problem with Fishinshed step showing up blank when a data source was added during onboarding
+### Known Problems
+- reset sequence on connect hangs if the scan tool doesn't respond
+
+## 0.50.15
+- minimums to save a trip are a distance of 0.1 km and a duration of at least 15 seconds
+
+## 0.50.14
+- export activity indicator
+- log level display
+- export options include log level filtering
+
+## 0.50.13
+- added alert to export debugging logs action
+- show loading entry for debug logs
+
+## 0.50.12
+- OBD Record will now discard any trip less than 0.1 km as being uninteresting.
+- initial logging support added to Settings.About where you can see the most recent entries and copy the logs to the clipboard for sharing.
