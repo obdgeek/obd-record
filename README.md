@@ -18,7 +18,7 @@
 <a id='requirements'></a>
 ## Requirements
 - iPhone running iOS 16.2 or later
-- OBDLink MX+ OBDII adapter
+- OBDLink MX+ OBDII scan tool
 - InfluxDB data source (a sample data source is proviced for testing or you can create your own at [Influx Cloud](https://cloud2.influxdata.com/signup))
 
 <a id='installation'></a>
